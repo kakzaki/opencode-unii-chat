@@ -6,7 +6,13 @@ Logs conversation text, builds a binary summary tree, and replaces previous turn
 
 ## Install
 
-Requires OpenCode V2's server plugin API and a configured summarization provider. No build or npm dependencies are needed. Clone the public repository:
+Requires OpenCode V2's server plugin API and a configured summarization provider. No build or npm dependencies are needed. Install globally from GitHub:
+
+```sh
+opencode plugin add github:kakzaki/opencode-unii-chat
+```
+
+Alternatively, clone the public repository:
 
 ```sh
 git clone https://github.com/kakzaki/opencode-unii-chat.git
@@ -25,7 +31,7 @@ Replace the path on another machine. Linux/macOS absolute paths and `file:///...
 
 If already installed as `~/.config/opencode/plugins/unii-chat.js`, move that auto-loaded copy outside the plugins folder before enabling this package. Load only one copy. Existing memory storage remains compatible. Reload plugins after configuration changes; environment changes require restarting the service process.
 
-The source is available on [GitHub](https://github.com/kakzaki/opencode-unii-chat). This package is not published to the npm registry; install from the checkout above. `npm pack` creates an npm-compatible archive.
+The source is available on [GitHub](https://github.com/kakzaki/opencode-unii-chat). This package is not published to the npm registry. `npm pack` creates an npm-compatible archive. Installation does not run build or test lifecycle scripts; development checks run explicitly and in CI.
 
 ## Configuration
 
