@@ -1,0 +1,23 @@
+{
+  "name": "opencode-unii-chat",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "kakzaki",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kakzaki/opencode-unii-chat.git"
+  },
+  "homepage": "https://github.com/kakzaki/opencode-unii-chat#readme",
+  "bugs": "https://github.com/kakzaki/opencode-unii-chat/issues",
+  "description": "Zoomable persistent chat memory for OpenCode V2",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": "./src/index.js",
+  "files": ["src", "README.md"],
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "check": "node --check src/index.js",
+    "test": "node --test",
+    "prepack": "npm run check && npm test"
+  }
+}
